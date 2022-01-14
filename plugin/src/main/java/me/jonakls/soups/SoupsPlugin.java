@@ -4,16 +4,15 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class SoupsPlugin extends JavaPlugin {
 
+	
     @Override
     public void onDisable() {
-
-
-        super.onDisable();
+	// On disable logic plugin
     }
 
     @Override
     public void onEnable() {
-        super.onEnable();
+        // On enablo logic plugin
     }
 
 }
