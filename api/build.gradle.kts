@@ -10,6 +10,6 @@ repositories {
 }
 
 dependencies {
-    implementation("team.unnamed.gui:core:2.3.4-SNAPSHOT")
+    implementation("team.unnamed.gui:core:2.3.3-SNAPSHOT")
     compileOnly("org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT")
 }
