@@ -10,4 +10,6 @@ repositories {
 
 dependencies {
     compileOnly("org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT")
+
+    implementation("fr.mrmicky:fastboard:1.2.0")
 }
