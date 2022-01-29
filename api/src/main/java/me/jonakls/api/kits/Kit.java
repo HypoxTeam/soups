@@ -2,7 +2,7 @@ package me.jonakls.api.kits;
 
 import org.bukkit.inventory.ItemStack;
 
-public class KitBuilder {
+public class Kit {
 
     private String name;
     private String description;
@@ -11,12 +11,12 @@ public class KitBuilder {
     private boolean available;
     private ItemStack[] content;
 
-    public KitBuilder(String name, String description, String permission, double price, boolean avilable, ItemStack[] content) {
+    public Kit(String name, String description, String permission, double price, boolean available, ItemStack[] content) {
         this.name = name;
         this.description = description;
         this.permission = permission;
         this.price = price;
-        this.available = avilable;
+        this.available = available;
         this.content = content;
     }
 
