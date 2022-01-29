@@ -5,11 +5,14 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven("https://repo.unnamed.team/repository/unnamed-public/")
     maven("https://repo.codemc.org/repository/nms/")
 }
 
 dependencies {
-    compileOnly("org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT")
-
+    implementation("me.yushust.inject:core:0.4.5-SNAPSHOT")
     implementation("fr.mrmicky:fastboard:1.2.0")
+    implementation(project(":api"))
+
+    compileOnly("org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT")
 }
