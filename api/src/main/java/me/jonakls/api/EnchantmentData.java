@@ -2,19 +2,25 @@ package me.jonakls.api;
 
 import org.bukkit.enchantments.Enchantment;
 
-public class EnchantmentSerializer {
+public class EnchantmentData {
 
     private Enchantment enchantment;
     private int level;
 
-    public EnchantmentSerializer(Enchantment enchantment, int level) {
+    public EnchantmentData(Enchantment enchantment, int level) {
         this.enchantment = enchantment;
         this.level = level;
     }
 
-    public EnchantmentSerializer(String...id) {
-        this.enchantment = Enchantment.getByName(id[0].equals(null) ? "LUCK" : id[0]);
-        this.level = Integer.parseInt(id[1] == null ? "1" : id[1]);
+    public static EnchantmentData from(Enchantment enchantment, int level) {
+        return new EnchantmentData(enchantment, level);
+    }
+
+    public static EnchantmentData from(String... id) {
+        if (id.length < 2) {
+            return from(Enchantment.LUCK, 1);
+        }
+        return from(Enchantment.getByName(id[0]), Integer.parseInt(id[1]));
     }
 
     public Enchantment getEnchantment() {
