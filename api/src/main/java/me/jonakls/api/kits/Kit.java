@@ -2,21 +2,21 @@ package me.jonakls.api.kits;
 
 import org.bukkit.inventory.ItemStack;
 
-public class Kit {
+public class KitBuilder {
 
     private String name;
     private String description;
     private String permission;
     private double price;
-    private boolean status;
+    private boolean available;
     private ItemStack[] content;
 
-    public Kit(String name, String description, String permission, double price, boolean status, ItemStack[] content) {
+    public KitBuilder(String name, String description, String permission, double price, boolean avilable, ItemStack[] content) {
         this.name = name;
         this.description = description;
         this.permission = permission;
         this.price = price;
-        this.status = status;
+        this.available = avilable;
         this.content = content;
     }
 
@@ -36,8 +36,8 @@ public class Kit {
         return price;
     }
 
-    public boolean isStatus() {
-        return status;
+    public boolean isAvailable() {
+        return available;
     }
 
     public ItemStack[] getContent() {
@@ -60,8 +60,8 @@ public class Kit {
         this.price = price;
     }
 
-    public void setStatus(boolean status) {
-        this.status = status;
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
 
     public void setContent(ItemStack[] content) {
