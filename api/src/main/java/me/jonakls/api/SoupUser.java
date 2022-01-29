@@ -17,7 +17,9 @@ public class SoupUser {
     private double coins;
     private double xp;
 
-    public SoupUser(String name, UUID id, GameStatus gameStatus, List<Kit> kits, int kills, int deaths, double kdr, double coins, double xp) {
+    public SoupUser(String name, UUID id, GameStatus gameStatus, List<Kit> kits,
+                    int kills, int deaths, double kdr, double coins, double xp
+    ) {
         this.name = name;
         this.id = id;
         this.gameStatus = gameStatus;
