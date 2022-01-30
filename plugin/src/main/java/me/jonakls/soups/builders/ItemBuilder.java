@@ -1,6 +1,6 @@
-package me.jonakls.api.builders;
+package me.jonakls.soups.builders;
 
-import me.jonakls.api.EnchantmentData;
+import me.jonakls.soups.EnchantmentData;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;

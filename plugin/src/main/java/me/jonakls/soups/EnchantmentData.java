@@ -1,4 +1,4 @@
-package me.jonakls.api;
+package me.jonakls.soups;
 
 import org.bukkit.enchantments.Enchantment;
 
