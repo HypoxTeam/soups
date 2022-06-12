@@ -4,8 +4,8 @@ import org.bukkit.enchantments.Enchantment;
 
 public class EnchantmentData {
 
-    private Enchantment enchantment;
-    private int level;
+    private final Enchantment enchantment;
+    private final int level;
 
     public EnchantmentData(Enchantment enchantment, int level) {
         this.enchantment = enchantment;
