@@ -2,9 +2,9 @@ package me.jonakls.soups.utils;
 
 import org.bukkit.ChatColor;
 
-public class ChatUtils {
+public class TextUtil {
 
-    public static String toLegacyColors(String text) {
+    public static String colorize(String text) {
         return ChatColor.translateAlternateColorCodes('&', text);
     }
 
