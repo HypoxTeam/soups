@@ -1,7 +1,9 @@
 package me.jonakls.soups.module;
 
+import com.google.inject.AbstractModule;
+import com.google.inject.Injector;
+import com.google.inject.Guice;
 import me.jonakls.soups.SoupsPlugin;
-import me.yushust.inject.AbstractModule;
 
 public class BinderModule extends AbstractModule {
 
@@ -14,5 +16,9 @@ public class BinderModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(SoupsPlugin.class).toInstance(plugin);
+    }
+
+    public Injector createInjector() {
+        return Guice.createInjector(this);
     }
 }
