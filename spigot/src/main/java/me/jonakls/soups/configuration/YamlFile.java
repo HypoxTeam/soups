@@ -1,7 +1,7 @@
 package me.jonakls.soups.configuration;
 
 import me.jonakls.soups.SoupsPlugin;
-import me.jonakls.soups.utils.ChatUtils;
+import me.jonakls.soups.utils.TextUtil;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -60,8 +60,8 @@ public class YamlFile extends YamlConfiguration {
     @Override
     public String getString(String path) {
         if (super.getString(path) != null) {
-            return ChatUtils.toLegacyColors(super.getString(path));
+            return TextUtil.colorize(super.getString(path));
         }
-        return ChatUtils.toLegacyColors("&8[&cx&8]: &cError, path (" + path + ") is null, please review your configuration files.");
+        return TextUtil.colorize("&8[&cx&8]: &cError, path (" + path + ") is null, please review your configuration files.");
     }
 }
