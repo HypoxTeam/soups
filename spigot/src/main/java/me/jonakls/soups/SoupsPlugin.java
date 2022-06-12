@@ -1,7 +1,7 @@
 package me.jonakls.soups;
 
+import com.google.inject.Injector;
 import me.jonakls.soups.module.BinderModule;
-import me.yushust.inject.Injector;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class SoupsPlugin extends JavaPlugin {
@@ -21,7 +21,8 @@ public class SoupsPlugin extends JavaPlugin {
 
 
     private void setupInjector() {
-        Injector injector = Injector.create(new BinderModule(this));
+        BinderModule binderModule = new BinderModule(this);
+        Injector injector = binderModule.createInjector();
         injector.injectMembers(this);
     }
 
