@@ -1,3 +1,3 @@
-rootProject.name= "soups"
+rootProject.name= "SoupsKits"
 
-include(":plugin", ":api")
+include(":spigot", ":api", ":paper")
