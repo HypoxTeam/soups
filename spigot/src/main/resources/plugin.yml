@@ -1,0 +1,4 @@
+main: me.jonakls.soups.SoupsPlugin
+name: SoupsKits
+version: '@version@'
+author: Jonakls
