@@ -13,8 +13,8 @@ import java.util.List;
 
 public class ItemBuilder {
 
-    private ItemStack item;
-    private ItemMeta meta;
+    private final ItemStack item;
+    private final ItemMeta meta;
 
     public ItemBuilder(Material material) {
         this.item = new ItemStack(material);
