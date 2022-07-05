@@ -1,6 +1,6 @@
 package me.jonakls.api;
 
-import me.jonakls.api.kits.Kit;
+import me.jonakls.api.abstractions.Kit;
 
 import java.util.List;
 import java.util.UUID;
