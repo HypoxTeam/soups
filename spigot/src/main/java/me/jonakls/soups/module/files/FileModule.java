@@ -8,7 +8,7 @@ import static com.google.inject.name.Names.named;
 
 public class FileModule extends AbstractModule {
 
-    private SoupsPlugin plugin;
+    private final SoupsPlugin plugin;
 
     public FileModule(SoupsPlugin plugin) {
         this.plugin = plugin;
